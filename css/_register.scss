@@ -1,0 +1,119 @@
+// =========== login page ============
+.logHeader__section{
+    padding: 0px 10px;
+    .logHeader__logo{
+        width: 12%;
+    }
+    .logHeader__text{
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            color: #343a40;
+        }
+    }
+
+}
+.logBox__section{
+    padding: 80px 0px;
+    .logBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login{
+            width: 600px;
+            h2{
+                font-size: 40px;
+                line-height: 55px;
+                font-weight: 600;
+                margin-bottom: 35px;
+                color: $themeClr;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                div{
+                    label{
+                        display: block;
+                        margin-bottom: 8px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    input{
+                        width: 100%;
+                        border: solid 1px var(--bs-gray-200);
+                        border-radius: 5px;
+                        padding: 11px 20px;
+                        background: #e8f5e98a;
+                        transition: 0.3s;
+                        &:focus{
+                            outline: none;
+                            border: solid 1px $themeClr;
+                        }
+                    }
+                }
+                .roles{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    p{
+                        a{
+                            color: $themeClr;
+                            font-weight: 600;
+                        }
+                    }
+                    .check{
+                        display: inline-block !important;
+                        position: relative;
+                        input[type="checkbox"]{
+                            opacity: 0;
+                            &:checked~.custom-radio i{
+                                display: block !important;
+                            }
+                        }
+                        
+                        .custom-radio{
+                            cursor: pointer;
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            border: solid 2px $themeClr;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 5px;
+                            padding: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            i{
+                                color: $themeClr;
+                                font-size: 14px;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .submit{
+                    padding: 11px 15px;
+                    background: green;
+                    border: none;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    box-shadow: 0 5px 10px -8px black;
+                    display: block;
+                    transition: 0.3s;
+                    &:hover{
+                        background: $hoverClr;
+                    }
+                }
+            }
+        }
+    }
+}
+.forget{
+    color: #343a40;
+    font-weight: 500;
+}

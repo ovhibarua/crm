@@ -1,0 +1,131 @@
+.package__bnnr {
+    padding: 120px 0px;
+    border-bottom: solid 0px #1c733e;
+    background: #1c733e;
+
+    .hero__title {
+        text-align: center;
+
+        h1 {
+            color: white;
+            font-size: 45px;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+}
+
+.package__section {
+    padding: 100px 0px 90px;
+
+    .package__box {
+        padding: 35px;
+        border: solid 1px var(--bs-gray-200);
+        box-shadow: 0 0 11px #eaf0f6;
+        border-radius: 5px;
+        width: 400px;
+        margin: 0 auto;
+        height: 100%;
+        transition: 0.3s;
+        background: #388e3c0d;
+        &:hover{
+            border: solid 1px $themeClr;
+        }
+        p{
+            height: 80px;
+        }
+
+        .package__title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            .package__logo {
+                width: 16%;
+            }
+
+        }
+
+        .package__price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .pNumber {
+                display: inline-block;
+
+                span {
+                    font-size: 45px;
+                    font-weight: 600;
+                }
+
+                sup {
+
+                    font-size: 17px;
+                    font-weight: 600;
+                    transform: translateY(-14px);
+                    display: inline-block;
+
+                }
+            }
+
+            .pText {
+                font-size: 13px;
+            }
+        }
+
+        .package__list {
+            h5 {
+                font-size: 18px;
+                font-weight: 100;
+                margin: 15px 0px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    display: flex;
+                    gap: 8px;
+                    align-items: flex-start;
+                    font-size: 15px;
+                    padding-top: 15px;
+                    i{
+                        color: $themeClr;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .package__button{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            button{
+                width: 100%;
+                border: none;
+                padding: 10px 15px;
+                background: green;
+                color: white;
+                border-radius: 4px;
+                font-weight: 600;
+                transition: 0.3s;
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+            span{
+                font-size: 13px;
+            }
+        }
+    }
+}
